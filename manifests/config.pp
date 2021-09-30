@@ -51,31 +51,4 @@ class step_ca::config (
     group  => $step_group,
     owner  => $step_user,
   }
-  # exec { 'step_ca_init_mv':
-  #   command => "/bin/mv ${step_user_home}/.step/* ${step_user_home}",
-  #   creates => "${step_user_home}/.puppet_move.lock",
-  #   group   => $step_group,
-  #   path    => $facts['path'],
-  #   user    => $step_user,
-  # }
-
-  # -> file { "${step_user_home}/.puppet_move.lock":
-  #   ensure => file,
-  #   group  => $step_group,
-  #   owner  => $step_user,
-  # }
-
-  # exec { 'step_ca_init_clear_config':
-  #   command => "sed -i -e \"s#.step/##g\" ${step_user_home}/config/*.json",
-  #   creates => "${step_user_home}/.puppet_config.lock",
-  #   group   => $step_group,
-  #   path    => $facts['path'],
-  #   user    => $step_user,
-  # }
-
-  # -> file { "${step_user_home}/.puppet_config.lock":
-  #   ensure => file,
-  #   group  => $step_group,
-  #   owner  => $step_user,
-  # }
 }
