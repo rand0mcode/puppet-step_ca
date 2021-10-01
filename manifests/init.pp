@@ -11,12 +11,15 @@
 # @example
 #   include step_ca
 class step_ca (
-  String $binary_arch        = 'amd64',
-  String $ca_checksum        = '7845d35c0632983197d4b11076896a93902ec433803966ff6f87b29003135507',
-  String $ca_version         = '0.17.4',
-  String $checksum_algorithm = 'sha256',
-  String $cli_checksum       = '5e359920933e9d7213efd53d1c67b0af809288770d6b5b088e0b4d749389a3cb',
-  String $cli_version        = '0.17.5',
+  String $binary_arch                    = 'amd64',
+  String $ca_checksum                    = '7845d35c0632983197d4b11076896a93902ec433803966ff6f87b29003135507',
+  String $ca_version                     = '0.17.4',
+  String $checksum_algorithm             = 'sha256',
+  String $cli_checksum                   = '5e359920933e9d7213efd53d1c67b0af809288770d6b5b088e0b4d749389a3cb',
+  String $cli_version                    = '0.17.5',
+
+  Boolean $enable_acme                   = true,
+  Boolean $enable_sshpop                 = true,
   Stdlib::Absolutepath $ca_password_file = '/etc/step-ca/.password',
   Stdlib::Absolutepath $step_user_home   = '/etc/step-ca',
   Stdlib::Absolutepath $step_user_shell  = '/bin/false',
