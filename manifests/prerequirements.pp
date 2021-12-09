@@ -8,7 +8,7 @@ class step_ca::prerequirements (
   String $step_group                    = $step_ca::step_group,
   String $step_user                     = $step_ca::step_user,
 ){
-    group { $step_group:
+  group { $step_group:
     ensure => present
   }
 
