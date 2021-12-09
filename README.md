@@ -1,9 +1,11 @@
 # step_ca
 # step_ca
 
+Smallstep CA - https://smallstep.com/
+
 ## Introduction
 
-Installas and basicly configures a step_ca. Installs the ca and step cli command.
+Installs and basicly configures a step_ca. Installs the ca and step cli command.
 
 ## Usage
 
