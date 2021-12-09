@@ -1,5 +1,4 @@
 # step_ca
-# step_ca
 
 Smallstep CA - https://smallstep.com/
 
